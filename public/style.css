@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #c1b5ad;
+}
+
+header {
+
+}
+
+#content {
+  display: flex;
+  flex-flow: row;
+  background-color: beige;
+}
+
+#map {
+  height: 100vh;
+  width: 65vw;
+  display: flex;
+}
+
+#options {
+  height: 35vh;
+  width: 35vw;
+  display: flex;
+  z-index: 2;
+  flex-flow: column;
+  align-items: center;
+}
+
+.guide , .itinerary{
+  padding: 20px;
+  width: 100%;
+}
+
+.guide-details {
+  /* width: 100%; */
+}
+
+.guide-button, .itinerary-button {
+  background-color: red;
+  box-shadow: 12 12 white;
+  width: 30px;
+  height: 30px;
+  
+}
+
+.selections, .itin-selections {
+  display: flex;
+  flex-flow: row;
+  align-items: center
+}
+
+.options-menu {
+  width: 100%;
+}
+
+.separator {
+  height: 50%;
+  width: 100%;
+  background-color: lightgray;
+  color: lightgray;
+}
+
+@media (max-width:376px){
+  #content{
+    /* flex-flow: row; */
+    background-color: palegreen;
+
+  }
+  /* #map{
+    height: 65vh;
+    width: 100vw;
+  } */
+
+}
